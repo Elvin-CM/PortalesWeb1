@@ -17,6 +17,18 @@ header div{
     display: flex;
     align-items: center;
 }
+header div h1{
+    font-size: 1.1rem;
+    margin: 0px;
+    color: white;
+}
+header div img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    padding: 0.1rem 0.5rem ;
+}
 header nav ul{
     display: flex;
     list-style: none;
@@ -25,10 +37,15 @@ header nav ul{
 }
 header nav ul li a{
     display: inline-block;
-    padding: 0.75rem 1.5rem;
     color: white;
     text-decoration: none;
     text-align: center;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem; /* alto x ancho */
+    /* Trouble TRBL Top Right Button Left*/
+}
+header nav ul li a:hover{
+    background-color: beige;
+    color: black;
 }
 h3{
     color:chocolate;
@@ -36,4 +53,8 @@ h3{
 }
 p{
     line-height: 1.5;
+}
+#demo{
+    display: inline-block;
+
 }
