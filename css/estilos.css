@@ -5,7 +5,9 @@
 body{
     margin: 0px;
     padding: 0px;
-
+}
+p{
+    line-height: 1.5;
 }
 header{
     display: flex;
@@ -41,20 +43,68 @@ header nav ul li a{
     text-decoration: none;
     text-align: center;
     padding: 0.75rem 1.5rem 0.75rem 1.5rem; /* alto x ancho */
-    /* Trouble TRBL Top Right Button Left*/
+    /* Trouble TRBL Top Right Bottom Left*/
 }
 header nav ul li a:hover{
     background-color: beige;
     color: black;
 }
-h3{
-    color:chocolate;
-    background-color: darkgreen;
+.contenedor{
+    max-width:1024px;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
 }
-p{
-    line-height: 1.5;
+.cardContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-#demo{
-    display: inline-block;
+.card{
+    overflow: hidden;
+    width: 320px;
+    border: 1px solid #000;
+    border-radius: 9px;
+    box-shadow: 3px 3px 5px #000;
+}
+.card img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card .cardBody{
+    padding: 0.5rem;
 
+}
+.card .cardFooter button{
+    background-color: darkcyan;
+    color:white;
+    width: 100%;
+    border: 1px solid darkslateblue;
+    padding: 0.85rem 0.75rem;
+}
+/*
+Unidades de Longitud
+
+Absolutas
+1px
+1cm
+1in
+1yd
+
+Relativas
+100%
+100vh
+100vw
+1em
+1rem
+
+*/
+.demoEMRem {
+    font-size: 2em;
+}
+
+.demoEMRem p {
+    font-size:2rem
 }
