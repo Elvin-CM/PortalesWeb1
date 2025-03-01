@@ -1,6 +1,6 @@
 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; /*Utiliza todo*/
 }
 body{
     margin: 0px;
@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: black;
-    align-items: center;
+    align-items: center; /* vertical */
 }
 header div{
     display: flex;
@@ -51,31 +51,31 @@ header nav ul li a:hover{
 }
 .contenedor{
     max-width:1024px;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto; /*Arriba y abajo 0,5 rem (8 pixeles), derecha e izq auto, para centrarlo*/
     padding: 0.5rem;
+    overflow: hidden;
 }
 .cardContainer{
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Reduzca y pase a la siguiente linea para que no distorsione*/
     gap: 1rem;
 }
 .card{
-    overflow: hidden;
+    overflow: hidden; /*Esconde lo que salga del contenedor*/
     width: 320px;
     border: 1px solid #000;
     border-radius: 9px;
-    box-shadow: 3px 3px 5px #000;
+    box-shadow: 3px 3px 5px #000; /*3 horizontal, 3 vertical y 5 blur*/
 }
 .card img{
     width:100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /*Va a mover para que quepa en espacio sin distorsionar*/
 }
 .card .cardBody{
     padding: 0.5rem;
-
 }
 .card .cardFooter button{
     background-color: darkcyan;
@@ -85,20 +85,21 @@ header nav ul li a:hover{
     padding: 0.85rem 0.75rem;
 }
 /*
-Unidades de Longitud
+Unidades de Longitud Para el modelo de cajas
 
-Absolutas
-1px
+Absolutas -> La unidad es la misma, no depende de nada
+1px -> Unidad mas comun, es un punto donde la pantalla definira un color
 1cm
 1in
 1yd
 
-Relativas
-100%
-100vh
-100vw
-1em
-1rem
+Relativas -> Unidad depende de algo
+100% -> Corresponde al 100% del espacio del contenedor padre
+100vh -> viewport height, 100% de la altura de la ventana, zona renderizable
+100vw -> viewport width, 100% del ancho de la ventana
+1em -> (entity m) Medida relativa a la tipografia, equivalente al espacio que toma la letra m de la tipografia utilizada, la m porque es la mas ancha
+1 em es equivalente a 16px, es relativo porque el contenedor define la unidad base
+1rem -> Usa el em de la raiz, la unidad establecida en el body. En relacion al body
 
 */
 .demoEMRem {
@@ -107,4 +108,74 @@ Relativas
 
 .demoEMRem p {
     font-size:2rem
+}
+.smallTags{
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;/*Si no cabe, tirelo para abajo*/
+    padding: 0px;
+    display:flex; /*Tener estructura de lineas y todos los elementos deben caber en la linea*/
+
+}
+.smallTags li{
+    margin: 1rem 0rem;
+    /*display: inline-block; Mantiene las propiedades de bloque de manipular ancho alto, pero deja la caract de que lo que quepa va a seguir.*/
+}
+.smallTags li div{
+    background-color: #9f9c02;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid #575501;
+}
+.smallTags li div img, .smallTags li div span{ /*La coma se utiliza para seleccionar varios elementos*/
+    display: block;
+}
+.hero-panel{
+    position: relative; /*Declara un plano cartesiano*/
+    width: 100%;
+    height: 80vh;/*Viewport high es la parte visible del ordenador*/
+}
+.hero-panel img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /**/
+    object-position: center;
+}
+.hero-panel div {
+    text-align: center;
+    position:absolute; /*Como usa posicion absoluta, va a usar el plano cartesiano inmediato superior declarado del hero-panel*/
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding:1.5rem;
+    box-shadow: 1px 1px 3px #000;
+    border-radius: 9px;
+    transform: translate(-50%, -50%); /*Mueve arriba, abajo, izq, der, basado en la referncia de la caja del elemento manipulado*/
+}
+.hero-panel div.q1{
+    top: 25%;
+    left: 25%;
+}
+.hero-panel div.q2{
+    top: 25%;
+    left: 75%;
+}
+.hero-panel div.q3{
+    top: 75%;
+    left: 25%;
+}
+.hero-panel div.q4{
+    top: 75%;
+    left: 75%;
+}
+.btn-accent{
+    display:inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color:#eee;
+    background-color: steelblue;
+    padding: 0.75rem 1rem;
+    border-radius: 17px;
+    box-shadow: 1px 1px 3px #1c3448;
 }

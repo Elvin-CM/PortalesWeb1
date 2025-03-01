@@ -1,140 +1,256 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        <title>Portales Web I 1 2025</title>
-        <link rel="stylesheet" href="css/estilos.css"/>
-    </head>
 
-    <body>
-        <header>
-            <div>
-                <img src="https://picsum.photos/id/96/64/64" alt="Logo de la pagina"/>
-                <h1 id="idx">Portales Web I primer parcial</h1>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portales Web I 1 2025</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://picsum.photos/id/96/64/64" alt="Logo de la pagina" />
+            <h1 id="idx">Portales Web I primer parcial</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ch1" title="Representacion de textos en html">Textos</a></li>
+                <li><a href="#ch2" title="Listas Ordenadas y no ordenadas">Listas</a></li>
+                <li><a href="#ch3" title="Hipervinculos y navegacion">Hipervinculos</a></li>
+                <li><a href="#ch4">Multimedia</a></li>
+                <li><a href="#ch5">Tablas</a></li>
+                <li><a href="#ch6">Formularios</a></li>
+                <li><a href="#ch7">Contenedores semanticos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-panel">
+            <picture>
+                <source srcset="https://picsum.photos/id/45/1300/900" media="(min-width:1025px)"/>
+                <source srcset="https://picsum.photos/id/45/1024/720" media="(min-width:768px)"/>
+                <img src="https://picsum.photos/id/45/400/400" alt="Hero Panel Image"/>
+            </picture>
+            <div class="q2">
+                <h2>Clase de Portales Web 1</h2>
+                <a href="" class="btn-accent">Matriculate</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#ch1" title="Representacion de textos en html">Textos</a></li>
-                    <li><a href="#ch2" title="Listas Ordenadas y no ordenadas">Listas</a></li>
-                    <li><a href="#ch3" title="Hipervinculos y navegacion">Hipervinculos</a></li>
-                    <li><a href="#ch4">Multimedia</a></li>
-                    <li><a href="#ch5">Tablas</a></li>
-                    <li><a href="#ch6">Formularios</a></li>
-                    <li><a href="#ch7">Contenedores semanticos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="contenedor">
-                <h2 id="ch1" >Representacion de contenido de texto</h2>
-                <h3>Encabezados</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore aut saepe, 
-                    ipsam itaque facilis sed natus ea amet unde in nulla adipisci deleniti quaerat consequatur 
-                    eius voluptates quibusdam soluta?
-                </p>
-                <p>
-                    HTML = Hypertext Markup Language
-                </p>
-                <h3>Parrafos</h3>
-                <section class="cardContainer">
-                    <div class="card">
-                        <img src="https://picsum.photos/id/140/300/200" alt="Imagen de picsum"/>
-                        <div class="cardBody">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui porro perspiciatis repellendus, provident, iure corporis, minima eum expedita reiciendis excepturi atque quis molestiae aut necessitatibus odit quae corrupti dolore rerum?
-                        </div>
-                        <div class="cardFooter">
-                            <button>Agregar</button>
-                        </div>
+        </section>
+        <div class="contenedor">
+            <h2 id="ch1">Representacion de contenido de texto</h2>
+            <h3>Encabezados</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore aut saepe,
+                ipsam itaque facilis sed natus ea amet unde in nulla adipisci deleniti quaerat consequatur
+                eius voluptates quibusdam soluta?
+            </p>
+            <p>
+                HTML = Hypertext Markup Language
+            </p>
+            <h3>Parrafos</h3>
+            <section class="cardContainer">
+                <div class="card">
+                    <img src="https://picsum.photos/id/140/300/200" alt="Imagen de picsum" />
+                    <div class="cardBody">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui porro perspiciatis repellendus,
+                        provident, iure corporis, minima eum expedita reiciendis excepturi atque quis molestiae aut
+                        necessitatibus odit quae corrupti dolore rerum?
                     </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
-                        <div class="cardBody">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui porro perspiciatis repellendus, provident, iure corporis, minima eum expedita reiciendis excepturi atque quis molestiae aut necessitatibus odit quae corrupti dolore rerum?
-                        </div>
-                        <div class="cardFooter">
-                            <button>Agregar</button>
-                        </div>
+                    <div class="cardFooter">
+                        <button>Agregar</button>
                     </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
-                        <div class="cardBody">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui porro perspiciatis repellendus, provident, iure corporis, minima eum expedita reiciendis excepturi atque quis molestiae aut necessitatibus odit quae corrupti dolore rerum?
-                        </div>
-                        <div class="cardFooter">
-                            <button>Agregar</button>
-                        </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <div class="cardBody">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui porro perspiciatis repellendus,
+                        provident, iure corporis, minima eum expedita reiciendis excepturi atque quis molestiae aut
+                        necessitatibus odit quae corrupti dolore rerum?
                     </div>
-                </section>
+                    <div class="cardFooter">
+                        <button>Agregar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <div class="cardBody">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui porro perspiciatis repellendus,
+                        provident, iure corporis, minima eum expedita reiciendis excepturi atque quis molestiae aut
+                        necessitatibus odit quae corrupti dolore rerum?
+                    </div>
+                    <div class="cardFooter">
+                        <button>Agregar</button>
+                    </div>
+                </div>
+            </section>
 
-                <section class = "demoEMRem">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi explicabo fuga error 
-                        temporibus? Natus explicabo perferendis quo vero laborum voluptate, minima ipsa temporibus 
-                        repudiandae adipisci! Quasi eos suscipit cupiditate.
-                    </p>
-                </section>
+            <section class="demoEMRem">
+                <p>
+                    AAALorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi explicabo fuga error
+                    temporibus? Natus explicabo perferendis quo vero laborum voluptate, minima ipsa temporibus
+                    repudiandae adipisci! Quasi eos suscipit cupiditate.
+                </p>
+            </section>
 
             <h4>Lorem Ipsum</h4>
-        <a href="#idx" id="demo">Regresar al inicio</a>
-        <h2 id="ch2" >Listas ordenadas y no ordenadas</h2>
+            <a href="#idx" id="demo">Regresar al inicio</a>
+            <h2 id="ch2">Listas ordenadas y no ordenadas</h2>
             <h3>Listas no ordenadas</h3>
-                <p>Son listas que no establece un orden particular, simplemente enuncian elementos comunes  de un dominio
-                    <!-- ol order list -->
-                     <ul>
-                        <li>Huevos</li> <!-- li list item -->
-                        <li>Leche</li>
-                        <li>Frijoles</li>
-                        <li>Pan</li>
-                        <li>Cafe</li>
-                        <li>Chucherias: 
-                            <ul>
-                                <li>Zambos salsa habanero</li>
-                                <li>Pringles cebolla</li>
-                                <li>Chips habanero</li>
-                                <li>Palitos Diana</li>
-                                <li>Snickers</li>
-                            </ul>
-                        </li>
-                     </ul>
-                </p>
+            <p>Son listas que no establece un orden particular, simplemente enuncian elementos comunes de un dominio
+                <!-- ol order list -->
+            <ul class="smallTags">
+                <li>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img inline">
+                        <span>Huevos</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img inline">
+                        <span>Leche</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img inline">
+                        <span>Frijoles</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img inline">
+                        <span>Pan</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img inline">
+                        <span>Cafe</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img inline">
+                        <span>Huevos</span>
+                        <ul>
+                            <li>Zambos salsa habanero</li>
+                            <li>Pringles cebolla</li>
+                            <li>Chips habanero</li>
+                            <li>Palitos Diana</li>
+                            <li>Snickers</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            </p>
             <h3>Listas ordenadas</h3>
-                <p>
-                    Listas ordenadas que si establecen un orden (Jerarquia)
-                    <ol>
-                        <li>Motagua</li>
-                        <li>Maratón</li>
-                        <li>Olimpia</li>
-                        <li>Real España</li>
-                        <li>Parrillas One</li>
-                        <li>Lista Demo:
-                            <ol>
-                                <li>Elemento 1</li>
-                                <li>Elemento 2</li>
-                                <li>Elemento 3</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </p>
-        <a href="#idx">Regresar al inicio</a>
-        <h2 id="ch3">Hipervinculos y navegacion</h2>   
             <p>
-                !Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore      
+                Listas ordenadas que si establecen un orden (Jerarquia)
+            <ol>
+                <li>Motagua</li>
+                <li>Maratón</li>
+                <li>Olimpia</li>
+                <li>Real España</li>
+                <li>Parrillas One</li>
+                <li>Lista Demo:
+                    <ol>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ol>
+                </li>
+            </ol>
+            </p>
+            <a href="#idx">Regresar al inicio</a>
+            <h2 id="ch3">Hipervinculos y navegacion</h2>
+            <section class="grid">
+                <div class="row">
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">3</div>
+                    <div class="col-3">3</div>
+                    <div class="col-3">3</div>
+                    <div class="col-3">3</div>
+                </div>
+                <div class="row">
+                    <div class="col-4">4</div>
+                    <div class="col-4">4</div>
+                    <div class="col-4">4</div>
+                </div>
+            </section>
+            <section class="grid">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="https://placehold.co/180x300" alt="Profile picture" />
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ex quod ab veniam at
+                                    adipisci, beatae commodi iste sed provident dolore perferendis error. Facere
+                                    architecto eveniet aliquam tempore quam exercitationem.</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        Abc
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        Abcd
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        Abcde
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p>
+                !Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore
                 aut saepe, ipsam itaque facilis sed natus ea amet unde in nulla adipisci deleniti
             </p>
-            <p>Hipervinculos relativos van a documentos dentro del mismo sitio<br/>
-            <a href="relativos.html">Ir a pagina relativa</a><br/>
-            <a href="carpetaprueba/introjavascript.html">Ir a pagina de introduccion a JS</a>
+            <p>Hipervinculos relativos van a documentos dentro del mismo sitio<br />
+                <a href="relativos.html">Ir a pagina relativa</a><br />
+                <a href="carpetaprueba/introjavascript.html">Ir a pagina de introduccion a JS</a>
             </p>
-        <!-- https://www.unicah.edu:9090/algo/pagina.html (URL Completa)-->
-        <!-- (protocolo)://(subdominio).(dominio) [:puerto]/recurso  -->
-         <p>
-            <a href="https://www.unicah.edu" target="_blank">Ir a UNICAH</a>
-         </p>
+            <!-- https://www.unicah.edu:9090/algo/pagina.html (URL Completa)-->
+            <!-- (protocolo)://(subdominio).(dominio) [:puerto]/recurso  -->
+            <p>
+                <a href="https://www.unicah.edu" target="_blank">Ir a UNICAH</a>
+            </p>
 
-        <a href="#idx">Regresar al inicio</a>
-        <h2 id="ch4">Multimedia</h2>
+            <a href="#idx">Regresar al inicio</a>
+            <h2 id="ch4">Multimedia</h2>
             <h3>Imagenes</h3>
             <p>
                 Una imagen vale mas que mil palabras.
@@ -142,128 +258,131 @@
             <h4>Dos tipos de imagenes</h4>
             <ol>
                 <li>Mapas de bits: Photoshop, gimp, ilustrator</li>
-                    <p>
-                        Manejamos lo alto, ancho, medido en pixeles (representacion del punto en la pantalla)<br/>
-                        ppp: puntos por pulgada (cuando hablamos de punto por pulgada es cuadrado)<br/>
-                        dpi: dots per inch<br/>
-                        Dimensiones: alto, ancho, px
-                    </p>
+                <p>
+                    Manejamos lo alto, ancho, medido en pixeles (representacion del punto en la pantalla)<br />
+                    ppp: puntos por pulgada (cuando hablamos de punto por pulgada es cuadrado)<br />
+                    dpi: dots per inch<br />
+                    Dimensiones: alto, ancho, px
+                </p>
                 <li>Vectoriales: Inkscape, Corel Draw, Ilustrator, Sketchbook</li>
             </ol>
 
-        <img src="images/selfie_web.jpg" alt="Foto de perfil"/>
+            <img src="images/selfie_web.jpg" alt="Foto de perfil" />
 
-        <picture>
-            <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)"/>
-            <source srcset="https://picsum.photos/id/212/1024/640" media="(min-width:481px)"/>
-            <img src="https://picsum.photos/id/212/480/480" alt="Calle en París"/> 
-        </picture>
+            <picture>
+                <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)" />
+                <source srcset="https://picsum.photos/id/212/1024/640" media="(min-width:481px)" />
+                <img src="https://picsum.photos/id/212/480/480" alt="Calle en París" />
+            </picture>
 
-        <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/vorbis"/>
-        </audio>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.ogg" type="audio/vorbis" />
+            </audio>
 
-        <video controls>
-            <source src="multimedia/Felicidades.mp4" type="video/mp4"/>
-        </video>
+            <video controls>
+                <source src="multimedia/Felicidades.mp4" type="video/mp4" />
+            </video>
 
-        <h2 id="ch5">Tablas</h2>
+            <h2 id="ch5">Tablas</h2>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, voluptas similique. Tempora consequatur eligendi ratione corporis, ducimus animi dolor voluptatum quaerat, maxime quos eos, id perferendis? Quos provident voluptatum quidem!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, voluptas similique. Tempora consequatur
+                eligendi ratione corporis, ducimus animi dolor voluptatum quaerat, maxime quos eos, id perferendis? Quos
+                provident voluptatum quidem!
             </p>
             <table border="1">
                 <thead>
-                <tr>
-                    <th colspan="6">Tabla de ventas promedio de 2025 de la trucha de don Joshe</th>
-                    
-                </tr>
-                <tr>
-                    <th>Region</th>
-                    <th>Ciudad</th>
-                    <th>Q1</th>
-                    <th>Q2</th>
-                    <th>Q3</th>
-                    <th>Q4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">Norte</td>
-                    <td>La Ceiba</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    
-                    <td>San Pedro Sula</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">Centro</td>
-                    <td>Comayagua</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    
-                    <td>Tegucigalpa</td>
-                    <td>86</td>
-                    <td>81</td>
-                    <td>89</td>
-                    <td>95</td>
-                </tr>
-                <tr>
-                  
-                    <td>Danli</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">Sur</td>
-                    <td>Choluteca</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                   
-                    <td>San Marcos de Colon</td>
-                    <td>80</td>
-                    <td>76</td>
-                    <td>84</td>
-                    <td>90</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="2">Promedio</td>
-                    
-                    <td>87</td>
-                    <td>89</td>
-                    <td>84</td>
-                    <td>88</td>
-                </tr>
-            </tfoot>
+                    <tr>
+                        <th colspan="6">Tabla de ventas promedio de 2025 de la trucha de don Joshe</th>
+
+                    </tr>
+                    <tr>
+                        <th>Region</th>
+                        <th>Ciudad</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Norte</td>
+                        <td>La Ceiba</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+
+                        <td>San Pedro Sula</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Centro</td>
+                        <td>Comayagua</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+
+                        <td>Tegucigalpa</td>
+                        <td>86</td>
+                        <td>81</td>
+                        <td>89</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+
+                        <td>Danli</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sur</td>
+                        <td>Choluteca</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+
+                        <td>San Marcos de Colon</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Promedio</td>
+
+                        <td>87</td>
+                        <td>89</td>
+                        <td>84</td>
+                        <td>88</td>
+                    </tr>
+                </tfoot>
             </table>
-        
-        <h2 id="ch6">Formularios</h2>
-       
-        <h2 id="ch7">Contenedores semanticos</h2>
-    </div>
+
+            <h2 id="ch6">Formularios</h2>
+
+            <h2 id="ch7">Contenedores semanticos</h2>
+        </div>
     </main>
     <footer>
         Copyrigth EAFCM UNICAH 2025
     </footer>
-    </body>
+</body>
+
 </html>
