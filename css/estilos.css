@@ -1,5 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
+    font-family: "Roboto", Arial, sans-serif;
     box-sizing: border-box; /*Utiliza todo*/
 }
 body{
@@ -11,6 +14,7 @@ p{
 }
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: black;
     align-items: center; /* vertical */
@@ -23,6 +27,9 @@ header div h1{
     font-size: 1.1rem;
     margin: 0px;
     color: white;
+    text-shadow: 1px 1px 3px #000;
+   /*-webkit-box-reflect: below;*/
+   text-decoration:line-through;
 }
 header div img{
     display: block;
@@ -31,19 +38,28 @@ header div img{
     border-radius: 50%;
     padding: 0.1rem 0.5rem ;
 }
+header nav{
+    width: 100%;
+    
+}
 header nav ul{
-    display: flex;
+    width: 100%;
     list-style: none;
     padding: 0px;
-    gap: 0.5rem;
+    gap: 0.25rem;
+}
+header nav ul li{
+    width: 100%;
 }
 header nav ul li a{
+    width: 100%;
     display: inline-block;
     color: white;
     text-decoration: none;
-    text-align: center;
-    padding: 0.75rem 1.5rem 0.75rem 1.5rem; /* alto x ancho */
+
+    padding: 0.5rem 0.75rem; /* alto x ancho */
     /* Trouble TRBL Top Right Bottom Left*/
+    border-bottom: 1px solid #eee;
 }
 header nav ul li a:hover{
     background-color: beige;
@@ -178,4 +194,52 @@ Relativas -> Unidad depende de algo
     padding: 0.75rem 1rem;
     border-radius: 17px;
     box-shadow: 1px 1px 3px #1c3448;
+}
+
+/*Media Queries
+Consultar metadata de los dispositivos
+min-width
+disposition
+scale
+density
+
+Sin media query es mobile first
+min-width >= 768px tableta
+min-width >= 1024px desktop
+min-width >= 2300px pantalla grande
+*/
+
+@media(min-width:768px){
+    header{
+        background-color:gray;
+    }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav ul li{
+        width: auto;
+    }
+    header nav ul li a{
+        border-bottom: none;
+    }
+}
+
+@media(min-width:1024px){
+    header{
+        background-color: rgb(101, 3, 3);  
+        flex-direction: row;
+    }
+    header nav{
+        width: auto;
+    }
+    header nav ul li{
+        width: auto;
+    }
+}
+@media(min-width:2300px){
+    header{
+        background-color: rgb(0, 0, 0);
+    }
 }
