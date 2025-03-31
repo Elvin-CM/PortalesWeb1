@@ -7,13 +7,25 @@
     <title>Portales Web I 1 2025</title>
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <script>
+        let mensaje_a_mostrar = "Click al presiona id ch1";
+        document.addEventListener("DOMContentLoaded", () => {
+            let chElement1 = document.getElementById("ch1");
+            chElement1.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                alert("Click al presionar ID ch1");
+            })
+        });
+    </script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
         <div>
             <img src="https://picsum.photos/id/96/64/64" alt="Logo de la pagina" />
-            <h1 id="idx">Portales Web I primer parcial</h1>
+            <h1 id="idx" onclick="alert('Clicked on h1 portales web 1')">Portales Web I primer parcial</h1>
         </div>
         <nav>
             <ul>
@@ -28,16 +40,42 @@
         </nav>
     </header>
     <main>
-        <section class="hero-panel">
-            <picture>
-                <source srcset="https://picsum.photos/id/45/1300/900" media="(min-width:1025px)"/>
-                <source srcset="https://picsum.photos/id/45/1024/720" media="(min-width:768px)"/>
-                <img src="https://picsum.photos/id/45/400/400" alt="Hero Panel Image"/>
-            </picture>
-            <div class="q2">
-                <h2>Clase de Portales Web 1</h2>
-                <a href="" class="btn-accent">Matriculate</a>
-            </div>
+        <section class="carrusel">
+            <section class="track">
+                <section class="hero-panel">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/45/1300/900" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/45/1024/720" media="(min-width:768px)" />
+                        <img src="https://picsum.photos/id/45/400/400" alt="Hero Panel Image" />
+                    </picture>
+                    <div class="q2">
+                        <h2>Clase de Portales Web 1</h2>
+                        <a href="" class="btn-accent">Matriculate</a>
+                    </div>
+                </section>
+                <section class="hero-panel">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/46/1300/900" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/46/1024/720" media="(min-width:768px)" />
+                        <img src="https://picsum.photos/id/46/400/400" alt="Hero Panel Image" />
+                    </picture>
+                    <div class="q3">
+                        <h2>Slide 2</h2>
+                        <a href="" class="btn-accent">Matriculate</a>
+                    </div>
+                </section>
+                <section class="hero-panel">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/47/1300/900" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/47/1024/720" media="(min-width:768px)" />
+                        <img src="https://picsum.photos/id/47/400/400" alt="Hero Panel Image" />
+                    </picture>
+                    <div class="q1">
+                        <h2>Slide 3</h2>
+                        <a href="" class="btn-accent">Matriculate</a>
+                    </div>
+                </section>
+            </section>
         </section>
         <div class="contenedor">
             <h2 id="ch1">Representacion de contenido de texto</h2>
